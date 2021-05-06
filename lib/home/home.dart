@@ -33,9 +33,15 @@ class _AbolTabolState extends State<AbolTabol> {
           future: data,
           builder: (context, snapshot) {
             return snapshot.hasData
-                ? Text(
-                    snapshot.data.countryPopulation.toString(),
-                    style: TextStyle(fontSize: 40),
+                ? Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        snapshot.data.countryPopulation.toString(),
+                        style: TextStyle(fontSize: 40),
+                      ),
+                      AbolTabolChild(),
+                    ],
                   )
                 : CircularProgressIndicator();
           },

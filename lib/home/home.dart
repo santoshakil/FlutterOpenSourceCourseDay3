@@ -1,4 +1,4 @@
-import 'package:aboltabolproject/api/ipinfo.dart';
+import 'package:aboltabolproject/apis/ipinfo.dart';
 import 'package:aboltabolproject/models/ip_data_model.dart';
 import 'package:aboltabolproject/provider/provider.dart';
 import 'package:flutter/material.dart';
